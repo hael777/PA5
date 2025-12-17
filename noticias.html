@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="index.html">
+    <span class="px-2 py-1 bg-dark text-white border border-dark rounded fw-bold"><i class="fa-solid fa-store"></i>
+        Hael.com
+    </span>
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Más
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="noticias.html">Noticias</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-5 fw-normal">Actualizaciones de Inventario y Soporte</h1>
+
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <h4 class="mb-4">Estado del Catálogo (Tabs)</h4>
+                <ul class="nav nav-tabs border-bottom-0" id="myTab" role="tablist">
+                    <li class="nav-item"><button class="nav-link active text-dark" data-bs-toggle="tab" data-bs-target="#all" type="button"><i class="fa-solid fa-list-ul small"></i> Resumen</button></li>
+                    <li class="nav-item"><button class="nav-link text-primary" data-bs-toggle="tab" data-bs-target="#lanzamientos" type="button"><i class="fa-solid fa-star small"></i> Lanzamientos</button></li>
+                    <li class="nav-item"><button class="nav-link text-danger" data-bs-toggle="tab" data-bs-target="#agotado" type="button"><i class="fa-solid fa-circle-xmark small"></i> Agotado</button></li>
+                    <li class="nav-item"><button class="nav-link text-warning" data-bs-toggle="tab" data-bs-target="#envios" type="button"><i class="fa-solid fa-truck-fast small"></i> Envíos</button></li>
+                </ul>
+                <div class="tab-content border rounded p-4 bg-light shadow-sm">
+                    <div class="tab-pane fade show active" id="all">
+                        <h5 class="text-muted mb-4">Reporte de hoy</h5>
+                        <div class="alert alert-success border-success-subtle mb-3">
+                            <strong>[Lanzamiento]</strong> La nueva colección de Anillos HAEL en Acero 316L ya está disponible en la web.
+                        </div>
+                        <div class="alert alert-danger border-danger-subtle mb-3">
+                            <strong>[Stock Crítico]</strong> Las camisas de Cuello Mao en color blanco están casi agotadas (quedan 3 unidades).
+                        </div>
+                        <div class="alert alert-warning border-warning-subtle">
+                            <strong>[Logística]</strong> Debido al feriado, los envíos a provincias tendrán un retraso de 24 horas.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <h4 class="mb-4">Dudas Frecuentes (HAEL)</h4>
+                <div class="accordion shadow-sm" id="faqHael">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#h1">
+                                ¿De qué material son sus joyas?
+                            </button>
+                        </h2>
+                        <div id="h1" class="accordion-collapse collapse show" data-bs-parent="#faqHael">
+                            <div class="accordion-body">
+                                Todas nuestras piezas están fabricadas en <strong>Acero Quirúrgico 316L</strong> e incluyen un baño de rodio para asegurar durabilidad y brillo eterno. No se oxidan ni manchan la piel.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#h2">
+                                ¿Cómo sé cuál es mi talla de camisa?
+                            </button>
+                        </h2>
+                        <div id="h2" class="accordion-collapse collapse" data-bs-parent="#faqHael">
+                            <div class="accordion-body">
+                                Manejamos un corte <strong>Slim Fit</strong>. Te recomendamos revisar nuestra tabla de medidas en la sección de Tienda o pedir una talla más si prefieres un estilo más holgado.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#h3">
+                                ¿Realizan cambios por talla?
+                            </button>
+                        </h2>
+                        <div id="h3" class="accordion-collapse collapse" data-bs-parent="#faqHael">
+                            <div class="accordion-body">
+                                ¡Sí! Tienes hasta <strong>7 días calendario</strong> para solicitar un cambio de talla en ropa, siempre que la prenda conserve sus etiquetas originales.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white p-4 mt-auto">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <span class="small d-block">Curso de Diseño y Desarrollo Web</span>
+                    <span class="small text-secondary">Evaluación Integral Isil &copy; 2025-II</span>
+                </div>
+                <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                    <a href="https://instagram.com" target="_blank" class="text-white me-3 fs-4 social-icon insta"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://tiktok.com" target="_blank" class="text-white me-3 fs-4 social-icon tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://youtube.com" target="_blank" class="text-white fs-4 social-icon youtube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-end"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="index.html">
+    <span class="px-2 py-1 bg-dark text-white border border-dark rounded fw-bold"><i class="fa-solid fa-store"></i>
+        Hael.com
+    </span>
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Más
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="noticias.html">Noticias</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="text-center display-4 mb-4">Nuestros Productos</h2>
+
+        <ul class="nav nav-tabs mb-4" id="productTabs" role="tablist">
+            <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#ropa">Ropa</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#joyas">
+                    Joyas <span class="badge bg-warning text-dark ms-1">Novedad</span>
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="productTabsContent">
+            
+            <div class="tab-pane fade show active" id="ropa">
+                <h4 class="mb-4">Categoría Ropa</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="position-relative">
+                                <img src="img/Mao.png" class="card-img-top" alt="Camisa Mao">
+                                <span class="badge bg-danger position-absolute top-0 end-0 m-2">Novedad</span>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Camisa Cuello Mao Blanca</h5>
+                                <p class="card-text text-muted small">Lino premium con corte minimalista. Esencial para un look HAEL limpio y fresco.</p>
+                                <div class="d-flex justify-content-between mt-3">
+                                    <button class="btn btn-primary btn-sm" data-bs-toggle="tooltip" title="Disponible en tallas S, M, L">
+                                        <i class="fa-solid fa-ruler"></i> Ver tallas
+                                    </button>
+                                    <button class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-truck"></i> Envío?</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="position-relative">
+                                <img src="img/baggy.png" class="card-img-top" alt="Jeans Baggy">
+                                <span class="badge bg-dark position-absolute top-0 end-0 m-2">Top Ventas</span>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Jeans Baggy "Hael-22"</h5>
+                                <p class="card-text text-muted small">Denim de alta resistencia con corte ancho. Comodidad urbana desde 2022.</p>
+                                <div class="d-flex justify-content-between mt-3">
+                                    <button class="btn btn-primary btn-sm" data-bs-toggle="tooltip" title="Tallas: 30, 32, 34, 36">
+                                        <i class="fa-solid fa-ruler"></i> Ver tallas
+                                    </button>
+                                    <button class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-truck"></i> Envío?</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="position-relative">
+                                <img src="img/hoobie.webp" class="card-img-top" alt="Hoodie">
+                                <span class="badge bg-danger position-absolute top-0 end-0 m-2">Oferta -15%</span>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Hoodie Oversize Negro</h5>
+                                <p class="card-text text-muted small">Algodón pesado cepillado. La armadura perfecta para el estilo callejero.</p>
+                                <div class="d-flex justify-content-between mt-3">
+                                    <button class="btn btn-primary btn-sm" data-bs-toggle="tooltip" title="Disponible en M, L, XL">
+                                        <i class="fa-solid fa-ruler"></i> Ver tallas
+                                    </button>
+                                    <button class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-truck"></i> Envío?</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="joyas">
+                <h4 class="mb-4">Categoría Joyería Acero 316L</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="position-relative">
+                                <img src="img/hael.jpg" class="card-img-top" alt="Cadena">
+                                <span class="badge bg-dark position-absolute top-0 end-0 m-2">Esencial</span>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Cadena Grumet "Hael"</h5>
+                                <p class="card-text text-muted small">Eslabones reforzados en acero quirúrgico. Un clásico que define nuestra marca.</p>
+                                <button class="btn btn-success w-100 mt-3" data-bs-toggle="tooltip" title="Acero 316L, 60cm de largo, Cierre de langosta.">
+                                    Ver Especificaciones
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="position-relative">
+                                <img src="img/pulsera.jpg" class="card-img-top" alt="Pulsera">
+                                <span class="badge bg-danger position-absolute top-0 end-0 m-2">Últimas unidades</span>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Pulsera Industrial 316L</h5>
+                                <p class="card-text text-muted small">Diseño de placa sólida con acabado cepillado. Resistencia extrema al agua.</p>
+                                <button class="btn btn-success w-100 mt-3" data-bs-toggle="tooltip" title="Acero Quirúrgico, Ajustable 18-21cm, Grabado láser.">
+                                    Ver Especificaciones
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="position-relative">
+                                <img src="img/anillo.jpg" class="card-img-top" alt="Anillo">
+                                <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2">Novedad</span>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Anillo Sello HAEL</h5>
+                                <p class="card-text text-muted small">Pulido a espejo con grabado interno. El detalle final para tu outfit urbano.</p>
+                                <button class="btn btn-success w-100 mt-3" data-bs-toggle="tooltip" title="Tallas 8-11, Acero Macizo, No mancha la piel.">
+                                    Ver Especificaciones
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white p-4 mt-auto">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+                <span class="small d-block">Curso de Diseño y Desarrollo Web</span>
+                <span class="small text-secondary">Evaluación Integral Isil &copy; 2025-II</span>
+            </div>
+
+            <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                <a href="https://instagram.com" target="_blank" class="text-white me-3 fs-4 social-icon insta">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://tiktok.com" target="_blank" class="text-white me-3 fs-4 social-icon tiktok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" class="text-white fs-4 social-icon youtube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-4 text-center text-md-end">
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+</html>
